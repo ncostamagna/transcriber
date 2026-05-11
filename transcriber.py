@@ -42,7 +42,7 @@ def get_speaker(start, end, diarization):
 # ── 2. Transcription ────────────────────────────────────────
 print("📝 Transcribing...")
 model = WhisperModel("large-v3", device="cpu", compute_type="int8")
-segments, info = model.transcribe(AUDIO, language="es")
+segments, info = model.transcribe(AUDIO, language="en")
 segments = list(segments)
 
 # ── 3. Merge and save ───────────────────────────────────────

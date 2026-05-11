@@ -4,7 +4,7 @@
 conda create -n transcriber python=3.14.4 -c conda-forge
 ```
 
-# Setup
+# Setup Transcriber
 
 ## Step 1
 
@@ -28,6 +28,23 @@ Get your Hugging Face token
     - https://huggingface.co/pyannote/segmentation-3.0
 - Go to https://huggingface.co/settings/tokens → click New token → copy it
 
+# Setup Summarize
+
+install ollama
+
+```sh
+brew install ollama
+```
+
+Download a model (good balance of quality vs speed on 18GB RAM)
+
+```sh
+# Use the llm that you want
+
+ollama pull llama3.1:8b
+
+ollama pull gemma3:12b
+```
 
 # Dependencies
 
